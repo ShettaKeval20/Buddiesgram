@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile.EditProfileActivity">
+
+    <include layout="@layout/main_app_bar"
+        android:id="@+id/app_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/app_bar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/edit_profile_user_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#000"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/edit_profile_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:layout_margin="25dp"
+                android:hint="Username"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:background="@drawable/shape"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_profile_user_image" />
+
+            <EditText
+                android:id="@+id/edit_profile_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:layout_margin="25dp"
+                android:hint="Full name"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:background="@drawable/shape"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_profile_user_name"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <EditText
+                android:id="@+id/edit_profile_caption_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@drawable/shape"
+                android:hint="Caption"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:padding="18dp"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_profile_full_name"
+                tools:layout_editor_absoluteX="45dp" />
+
+            <EditText
+                android:id="@+id/edit_profile_country_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@drawable/shape"
+                android:hint="Country Name"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:padding="18dp"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_profile_caption_name"
+                tools:layout_editor_absoluteX="34dp" />
+
+            <Button
+                android:id="@+id/edit_save_profile"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/buttons"
+                android:padding="15dp"
+                android:enabled="false"
+                android:text="Save"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_profile_country_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "715452816823",
+    "firebase_url": "https://buddiesgram-29m21-default-rtdb.firebaseio.com",
+    "project_id": "buddiesgram-29m21",
+    "storage_bucket": "buddiesgram-29m21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715452816823:android:9c61386d327d31dcaf5c32",
+        "android_client_info": {
+          "package_name": "com.kevalshetta.shetta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715452816823-l0os43gv8cb58gvl703jnue6rn0v332c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnMY1r99bVcN8kPIlgS0Mgy_a9_4gJ7XM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715452816823-l0os43gv8cb58gvl703jnue6rn0v332c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

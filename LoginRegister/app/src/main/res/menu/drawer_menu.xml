@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/first">
+
+        <item android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/home"/>
+
+        <item android:id="@+id/add_new_post"
+            android:title="Add New Post"
+            app:showAsAction="always"
+            android:icon="@drawable/add_post"/>
+
+        <item android:id="@+id/profile"
+            android:title="Profile"
+            android:icon="@drawable/friend"/>
+
+        <item android:id="@+id/friend"
+            android:title="My Friends"
+            android:icon="@drawable/friends"/>
+
+        <item android:id="@+id/find_friend"
+            android:title="Find Friend"
+            android:icon="@drawable/person"/>
+
+        <item android:id="@+id/friend_request"
+            android:title="Friend Request"
+            android:icon="@drawable/request"/>
+
+        <item android:id="@+id/message"
+            android:title="Chats"
+            android:icon="@drawable/message"/>
+
+        <item android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/log"/>
+
+    </group>
+</menu>
